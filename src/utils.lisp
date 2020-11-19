@@ -1,7 +1,7 @@
 (defpackage #:example/utils
   (:use #:cl)
   (:export #:do-the-job)
-  (:documentation "The utils"))
+  (:documentation "The utils."))
 (in-package example/utils)
 
 
@@ -13,16 +13,13 @@
 (defun do-the-job (first second)
   "The function does the job.
 
-It **concatenates** first and second arguments
-calling internal function concat.
+   It *concatenates* first and second arguments
+   calling internal function concat.
 
-On this multiline we'll check how does documentation
-system processes docstrings.
+   On this multiline we'll check how does documentation
+   system processes docstrings.
 
-By the way, pay attention at the second paragraph where
-I've used `reStructured text <https://www.sphinx-doc.org/en/master/usage/restructuredtext/>`_
-format to make the word \"concatenates\" bold.
-
-Also, we can reference some parts of the documentation.
-Read more about cross referencing in the :ref:`Handwritten documentation` chapter."
+   By the way, pay attention at the second paragraph where
+   I've used [mk2 markup](https://inters.co/geneva/mk2.html)
+   to make the word \"concatenates\" bold."
   (concat first second))

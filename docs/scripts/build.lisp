@@ -1,5 +1,8 @@
 (defpackage #:example-docs/build
   (:use #:cl)
+  (:import-from #:geneva.html)
+  (:import-from #:geneva.mk2)
+  (:import-from #:geneva.cl)
   (:export
    #:build))
 (in-package example-docs/build)

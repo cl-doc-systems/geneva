@@ -21,3 +21,8 @@
                "example-docs/build")
   :build-operation build-docs-op
   :build-pathname "docs/build/")
+
+
+(register-system-packages "geneva-html" '(#:geneva.html))
+(register-system-packages "geneva-mk2" '(#:geneva.mk2))
+(register-system-packages "geneva-cl" '(#:geneva.cl))
